@@ -1,0 +1,22 @@
+[package]
+name = "lockit"
+version = "0.1.0"
+authors = ["Joshua Inscoe <jinscoe123@gmail.com>"]
+description = "Password protect your files with strong encryption."
+keywords = ["cryptography", "encryption", "decryption", "secrets"]
+homepage = "https://github.com/pwnalone/lockit"
+repository = "https://github.com/pwnalone/lockit"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.81"
+clap = { version = "4.5.4", features = ["derive"] }
+ring = "0.17.8"
+rpassword = "7.3.1"
+tempfile = "3.10.1"
+thiserror = "1.0.58"
+zeroize = "1.7.0"
